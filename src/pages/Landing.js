@@ -6,7 +6,7 @@ const Landing = () => {
   return (
     <>
       <Navbar></Navbar>
-      <Alert message="bantu kami untuk lebih baik dalam melayani melalui Survei Kebutuhan Data (SKD 2022) Melalui link s.bps.go.id/oskd22"></Alert>
+      <Alert message="bantu kami untuk lebih baik dalam melayani melalui Survei Kebutuhan Data (SKD 2022) Melalui link <a href='#'>s.bps.go.id/oskd22</a>"></Alert>
       <div className="flex">
         <h1 className="m-auto">landing page</h1>
       </div>

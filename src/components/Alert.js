@@ -11,7 +11,11 @@ const AlertComp = (props) => {
   return isVisible ? (
     <div className="bg-yellow-400 py-2">
       <div className="w-11/12 flex m-auto items-center justify-between">
-        <p className="font-medium text-sm text-black">{props.message}</p>
+        {/* parsing string ke innerHTML, penggunaan dangerouslySetInnerHTML perlu pertimbangan XSS */}
+        <p
+          className="font-medium text-sm text-black"
+          dangerouslySetInnerHTML={{ __html: props.message }}
+        ></p>
         <CloseButton onClick={onClose} />
       </div>
     </div>

@@ -33,7 +33,7 @@ const Navbar = () => {
                     //   open ? "text-gray-900" : "text-gray-500",
                     //   "group bg-white rounded-md inline-flex items-center font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     // )}
-                    className="group rounded-md inline-flex items-center font-medium focus:outline-none hover:bg-blue-900"
+                    className="group rounded inline-flex items-center font-medium focus:outline-none hover:bg-blue-900"
                   >
                     <span>Produk Statistik</span>
                     <ChevronDownIcon
@@ -55,16 +55,16 @@ const Navbar = () => {
                     leaveTo="opacity-0 translate-y-1"
                   >
                     <Popover.Panel className="absolute z-10 -ml-4 mt-3 transform px-2 min-w-[200px] sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
-                      <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                      <div className="rounded shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                         <div className="relative grid gap-6 bg-white px-2 py-4 sm:gap-6 sm:p-4">
-                          <ul className="text-blue-400">
-                            <li className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                          <ul className="text-gray-600">
+                            <li className="-m-3 p-3 flex items-start rounded-md hover:bg-gray-50">
                               fdsafdsafds
                             </li>
-                            <li className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                            <li className="-m-3 p-3 flex items-start rounded-md hover:bg-gray-50">
                               fdsafds
                             </li>
-                            <li className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                            <li className="-m-3 p-3 flex items-start rounded-md hover:bg-gray-50">
                               fdsafds
                             </li>
                           </ul>
@@ -108,16 +108,16 @@ const Navbar = () => {
                     leaveTo="opacity-0 translate-y-1"
                   >
                     <Popover.Panel className="absolute z-10 -ml-4 mt-3 transform px-2 min-w-[200px] max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
-                      <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                      <div className="rounded shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                         <div className="relative grid gap-6 bg-white px-2 py-4 sm:gap-6 sm:p-4">
-                          <ul className="text-blue-400">
-                            <li className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                          <ul className="text-gray-600">
+                            <li className="-m-3 p-3 flex items-start rounded-md hover:bg-gray-50">
                               fdsafdsafds
                             </li>
-                            <li className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                            <li className="-m-3 p-3 flex items-start rounded-md hover:bg-gray-50">
                               fdsafds
                             </li>
-                            <li className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                            <li className="-m-3 p-3 flex items-start rounded-md hover:bg-gray-50">
                               fdsafds
                             </li>
                           </ul>
@@ -161,13 +161,13 @@ const Navbar = () => {
                     leaveTo="opacity-0 translate-y-1"
                   >
                     <Popover.Panel className="absolute z-10 -ml-4 mt-3 transform px-2 min-w-[200px] max-w-md sm:px-0 lg:ml-0 lg:left-1/2 lg:-translate-x-1/2">
-                      <div className="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
+                      <div className="rounded shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden">
                         <div className="relative grid gap-6 bg-white px-2 py-4 sm:gap-6 sm:p-4">
-                          <ul className="text-blue-400">
-                            <li className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                          <ul className="text-gray-600">
+                            <li className="-m-3 p-3 flex items-start rounded-md hover:bg-gray-50">
                               Indonesia
                             </li>
-                            <li className="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50">
+                            <li className="-m-3 p-3 flex items-start rounded-md hover:bg-gray-50">
                               Inggris
                             </li>
                           </ul>
