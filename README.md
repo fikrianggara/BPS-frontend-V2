@@ -68,3 +68,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 BSD 2-Clause "Simplified" © [Fikri Septrian Anggara](https://github.com/fikrianggara) 2022
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+
+[![forthebadge](http://forthebadge.com/images/badges/made-with-ruby.svg)](http://forthebadge.com)
+[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
+
