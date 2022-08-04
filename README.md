@@ -65,7 +65,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 ## [License](https://github.com/iharsh234/WebApp/blob/master/LICENSE.md)
 
-MIT © [Fikri Septrian Anggara](https://github.com/fikrianggara)
+BSD 2-Clause "Simplified" © [Fikri Septrian Anggara](https://github.com/fikrianggara)
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
