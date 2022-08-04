@@ -8,7 +8,7 @@ function classNames(...classes) {
 
 const Navbar = () => {
   return (
-    <Popover className="bg-blue-900 p-2 w-full">
+    <Popover className="bg-blue-900 py-2 w-full">
       <div className="flex justify-between w-11/12 items-center mx-auto">
         <a href="/">
           <div className="font-bold text-white text-xl flex items-center justify-between space-x-4">
