@@ -24,7 +24,7 @@
 
 <div>
  <p align="center">
-  <img height="1000" src="https://github.com/fikrianggara/fikrianggara.github.io/blob/main/assets/bps%202%20-%20landingpage.png?raw=true">
+  <img height="1300" src="https://github.com/fikrianggara/fikrianggara.github.io/blob/main/assets/bps%202%20-%20landingpage.png?raw=true">
 </p>
 </div>
 
@@ -63,12 +63,11 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | [Chairunnisa Fauzia Samu](https://github.com/scarletzyy)                                                                | [Fikri Septrian Anggara](https://github.com/fikrianggara)                                                                |
 
+
 ## [License](https://github.com/fikrianggara/BPS-frontend-V2/blob/main/LICENSE.md)
 
 BSD 2-Clause "Simplified" © [Fikri Septrian Anggara](https://github.com/fikrianggara) 2022
-
+## 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
-[![forthebadge](http://forthebadge.com/images/badges/made-with-ruby.svg)](http://forthebadge.com)
-[![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 
