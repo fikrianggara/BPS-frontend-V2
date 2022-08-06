@@ -7,6 +7,7 @@ function classNames(...classes) {
 }
 
 const Navbar = () => {
+  console.log("rendered");
   return (
     <Popover className="bg-blue-900 py-2 w-full">
       <div className="flex justify-between w-11/12 items-center mx-auto">
@@ -59,13 +60,25 @@ const Navbar = () => {
                         <div className="relative grid gap-6 bg-white px-2 py-4 sm:gap-6 sm:p-4">
                           <ul className="text-gray-600">
                             <li className="-m-3 p-3 flex items-start rounded-md hover:bg-gray-50">
-                              fdsafdsafds
+                              Publikasi
                             </li>
                             <li className="-m-3 p-3 flex items-start rounded-md hover:bg-gray-50">
-                              fdsafds
+                              Berita Resmi Statistik
                             </li>
                             <li className="-m-3 p-3 flex items-start rounded-md hover:bg-gray-50">
-                              fdsafds
+                              Tabel Statistik
+                            </li>
+                            <li className="-m-3 p-3 flex items-start rounded-md hover:bg-gray-50">
+                              Infografis
+                            </li>
+                            <li className="-m-3 p-3 flex items-start rounded-md hover:bg-gray-50">
+                              Indikator Strategis
+                            </li>
+                            <li className="-m-3 p-3 flex items-start rounded-md hover:bg-gray-50">
+                              Metadata
+                            </li>
+                            <li className="-m-3 p-3 flex items-start rounded-md hover:bg-gray-50">
+                              Direktori
                             </li>
                           </ul>
                         </div>

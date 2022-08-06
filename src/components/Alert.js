@@ -1,5 +1,12 @@
 import React from "react";
 import { useDisclosure, CloseButton } from "@chakra-ui/react";
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+} from "@chakra-ui/react";
 
 const AlertComp = (props) => {
   const {
