@@ -53,6 +53,15 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 - [React.js](https://reactjs.org) - A JavaScript library for building user interfaces
 - [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework packed with classes like <code>flex, pt-4, text-center and rotate-90</code> that can be composed to build any design, directly in your markup.
 
+## Requirement
+to start the apps, you need:
+ - node V18.0.+
+ - npm V7.0.+
+ 
+ to start the apps, run the following comand:
+ - <code>npm i</code>
+ - <code>npm start</code>
+  
 ## To-do
 
 - Add Some To-do list
