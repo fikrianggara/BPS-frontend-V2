@@ -2,10 +2,9 @@ import React from "react";
 import SearchForm from "../components/SearchForm";
 
 const Hero = () => {
-  //
   return (
-    <div className="h-[450px] bg-[url('../public/bg01.png')] object-fit object-left w-screen rounded-b-2xl relative m-auto items-center justify-center">
-      <div className="h-[400px] flex flex-col items-center justify-center w-[50%] m-auto gap-y-8">
+    <div className="h-[550px] bg-[url('../public/bg01.png')] object-cover w-full rounded-b-2xl relative m-auto items-center justify-center">
+      <div className="h-[500px] flex flex-col items-center justify-center w-[50%] m-auto gap-y-10">
         <div>
           <h1 className="text-xl text-white font-medium">
             Apa yang ingin anda cari hari ini?

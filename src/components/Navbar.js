@@ -9,7 +9,7 @@ function classNames(...classes) {
 const Navbar = () => {
   console.log("rendered");
   return (
-    <Popover className="bg-blue-900 py-2 w-full">
+    <Popover className="bg-blue-900 w-full">
       <div className="flex justify-between w-11/12 items-center mx-auto">
         <a href="/">
           <div className="font-bold text-white text-xl flex items-center justify-between space-x-4">
@@ -22,10 +22,23 @@ const Navbar = () => {
             <h1 className="text-xl italic">BADAN PUSAT STATISTIK</h1>
           </div>
         </a>
-        <ul className="font-medium text-white flex space-x-6 text-sm items-center">
-          <li id="beranda">Beranda</li>
-          <li id="senarai">Senarai Rencana Terbit</li>
-          <li id="produk-statistik">
+        <ul className="font-medium text-white flex space-x-6 text-sm items-center ">
+          <li
+            id="beranda"
+            className="p-4 hover:bg-darkBlueHover duration-200 ease-in-out"
+          >
+            Beranda
+          </li>
+          <li
+            id="senarai"
+            className="p-4 hover:bg-darkBlueHover duration-200 ease-in-out"
+          >
+            Senarai Rencana Terbit
+          </li>
+          <li
+            id="produk-statistik"
+            className="p-4 hover:bg-darkBlueHover duration-200 ease-in-out"
+          >
             <Popover className="relative">
               {({ open }) => (
                 <>
@@ -34,7 +47,7 @@ const Navbar = () => {
                     //   open ? "text-gray-900" : "text-gray-500",
                     //   "group bg-white rounded-md inline-flex items-center font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     // )}
-                    className="group rounded inline-flex items-center font-medium focus:outline-none hover:bg-blue-900"
+                    className="group rounded inline-flex items-center font-medium focus:outline-none "
                   >
                     <span>Produk Statistik</span>
                     <ChevronDownIcon
@@ -90,7 +103,10 @@ const Navbar = () => {
             </Popover>
           </li>
           <li>Layanan</li>
-          <li>
+          <li
+            id="about"
+            className="p-4 hover:bg-darkBlueHover duration-200 ease-in-out"
+          >
             <Popover className="relative">
               {({ open }) => (
                 <>
@@ -99,7 +115,7 @@ const Navbar = () => {
                     //   open ? "text-gray-900" : "text-gray-500",
                     //   "group bg-white rounded-md inline-flex items-center font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     // )}
-                    className="group rounded-md inline-flex items-center font-medium focus:outline-none hover:bg-blue-900"
+                    className="group rounded-md inline-flex items-center font-medium focus:outline-none"
                   >
                     <span>Tentang Kami</span>
                     <ChevronDownIcon
@@ -142,8 +158,16 @@ const Navbar = () => {
               )}
             </Popover>
           </li>
-          <li>PPID</li>
-          <li>
+          <li
+            id="ppid"
+            className="p-4 hover:bg-darkBlueHover duration-200 ease-in-out"
+          >
+            PPID
+          </li>
+          <li
+            id="language"
+            className="p-4 hover:bg-darkBlueHover duration-200 ease-in-out"
+          >
             <Popover className="relative">
               {({ open }) => (
                 <>
@@ -152,7 +176,7 @@ const Navbar = () => {
                     //   open ? "text-gray-900" : "text-gray-500",
                     //   "group bg-white rounded-md inline-flex items-center font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                     // )}
-                    className="group rounded-md inline-flex items-center font-medium focus:outline-none hover:bg-blue-900"
+                    className="group rounded-md inline-flex items-center font-medium focus:outline-none"
                   >
                     <span>Bahasa</span>
                     <ChevronDownIcon

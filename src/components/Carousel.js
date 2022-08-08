@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/solid";
 const carouselData = [
   {
@@ -102,12 +102,12 @@ const carouselData = [
 ];
 const CarouselCard = (props) => {
   return (
-    <div className="h-full w-48 bg-white border-x-1 text-center flex flex-col justify-between p-4 border-x">
+    <div className="h-full w-48 border-x-1 border-gray-300 hover:bg-gray-100 hover:border-blue-900 duration-200 ease-in-out text-center flex flex-col justify-between p-4 border-x">
       <img
         src={props.icon_url}
         className="w-3/5 object-cover w-20 self-center"
       ></img>
-      <h1 className="text-xl text-blue-700 font-medium">
+      <h1 className="text-xl text-blue-800 font-bold">
         {props.statistik && props.statistik}
       </h1>
       <h2 className="text-2xl text-orange-500 font-medium">
@@ -120,38 +120,61 @@ const CarouselCard = (props) => {
     </div>
   );
 };
-const LeftArrow = () => {
+export const LeftArrow = (props) => {
   return (
-    <div className="self-center">
-      <ChevronLeftIcon
-        onClick={() =>
-          document.getElementById("1").scrollIntoView({ behavior: "smooth" })
-        }
-        className="h-8 w-8 text-white rounded-full bg-cyan-600 "
-      ></ChevronLeftIcon>
+    <div className="self-center " onClick={props.onClickCallback}>
+      <ChevronLeftIcon className="h-8 w-8 shadow-lg text-white rounded-full bg-cyan-600 hover:bg-cyan-800 duration-200 ease-in-out hover:cursor-pointer"></ChevronLeftIcon>
     </div>
   );
 };
-const RightArrow = () => {
+
+export const RightArrow = (props) => {
   return (
-    <div className="self-center">
-      <ChevronRightIcon className="h-8 w-8 text-white rounded-full bg-cyan-600"></ChevronRightIcon>
+    <div className="self-center " onClick={props.onClickCallback}>
+      <ChevronRightIcon className="h-8 w-8 shadow-lg text-white rounded-full bg-cyan-600 hover:bg-cyan-800 duration-200 ease-in-out hover:cursor-pointer"></ChevronRightIcon>
     </div>
   );
 };
 const CarouselCards = () => {
+  const [slideIndex, setSlideIndex] = useState(0);
+  const itemLength = carouselData.length;
+  const handleArrowClick = (direction) => {
+    if (direction === "left") {
+      if (slideIndex === 0) {
+        setSlideIndex(itemLength - 1);
+      } else {
+        setSlideIndex(slideIndex - 1);
+      }
+    } else {
+      if (slideIndex === itemLength - 6) {
+        setSlideIndex(0);
+      } else {
+        setSlideIndex(slideIndex + 1);
+      }
+    }
+  };
+
   return (
     <>
-      <div className="h-full flex gap-x-4">
-        <LeftArrow></LeftArrow>
-        <ul className="h-full rounded-lg px-4 flex justify-center snap-x overflow-auto">
+      <div className="h-full w-full flex gap-x-4">
+        <LeftArrow onClickCallback={() => handleArrowClick("left")}></LeftArrow>
+        <ul className="h-full rounded-lg flex px-4 snap-x overflow-x-hidden">
           {carouselData.map((data) => (
-            <li className="snap-center" id={data.id} key={data.id}>
+            <li
+              className="snap-center duration-200 ease-in-out"
+              id={data.id}
+              key={data.id}
+              style={{
+                transform: `translateX(${slideIndex * -100}%)`,
+              }}
+            >
               {CarouselCard(data)}
             </li>
           ))}
         </ul>
-        <RightArrow></RightArrow>
+        <RightArrow
+          onClickCallback={() => handleArrowClick("right")}
+        ></RightArrow>
       </div>
     </>
   );
