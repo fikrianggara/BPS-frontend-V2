@@ -30,7 +30,7 @@ export const options1 = {
     },
     title: {
       display: true,
-      text: "Line Chart 1",
+      text: "Nilai Ekspor kuartal 1 dan 2 Periode 2021",
     },
   },
 };
@@ -43,11 +43,22 @@ export const options2 = {
     },
     title: {
       display: true,
-      text: "Line Chart 2",
+      text: "Nilai Import kuartal 1 dan 2 Periode 2021",
     },
   },
 };
-
+export const options3 = {
+  maintainAspectRatio: false,
+  plugins: {
+    legend: {
+      position: "top",
+    },
+    title: {
+      display: true,
+      text: "Laju Inflasi kuartal 1 dan 2 Periode 2021",
+    },
+  },
+};
 const labels = ["January", "February", "March", "April", "May", "June", "July"];
 
 export const data1 = {
@@ -85,6 +96,18 @@ export const data2 = {
   ],
 };
 
+export const data3 = {
+  labels,
+  datasets: [
+    {
+      label: "Dataset 5",
+      data: [50, 35, 70, 50, 65, 80, 90],
+      borderColor: "rgb(255, 99, 132)",
+      backgroundColor: "rgba(255, 99, 132, 0.5)",
+    },
+  ],
+};
+
 export const data = [data1, data2];
 const GrafikSection = () => {
   const [isGraphExpand, setIsGraphExpand] = useState(false);
@@ -101,7 +124,8 @@ const GrafikSection = () => {
       }
     } else {
       setGraphSlideIndex(0);
-      if (graphSlideIndex === itemLength - 1) {
+
+      if (graphSlideIndex === itemLength) {
       } else {
         setGraphSlideIndex(graphSlideIndex + 1);
       }
@@ -130,12 +154,12 @@ const GrafikSection = () => {
             />
           </div>
           {isGraphExpand && (
-            <div className="bg-white rounded-2xl h-fit m-auto text-center justify-center my-4 p-4 flex">
+            <div className="bg-white rounded-2xl h-fit m-auto text-center justify-center my-4 p-4 px-8 flex">
               {/* {grafik section start} */}
               <LeftArrow
                 onClickCallback={() => onArrowClickHandler("left")}
               ></LeftArrow>
-              <div className="h-[500px] w-full flex m-auto items-center overflow-x-hidden">
+              <div className="h-[500px] flex m-auto items-center overflow-x-hidden gap-x-4 justify-between">
                 <Line
                   data={data1}
                   options={options1}
@@ -149,6 +173,16 @@ const GrafikSection = () => {
                 <Line
                   data={data2}
                   options={options2}
+                  className="snap-center duration-200 ease-in-out"
+                  style={{
+                    transform: `translateX(${graphSlideIndex * -100}%)`,
+                    height: "100%",
+                    position: "relative",
+                  }}
+                />
+                <Line
+                  data={data3}
+                  options={options3}
                   className="snap-center duration-200 ease-in-out"
                   style={{
                     transform: `translateX(${graphSlideIndex * -100}%)`,

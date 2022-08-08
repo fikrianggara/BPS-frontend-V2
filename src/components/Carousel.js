@@ -102,7 +102,7 @@ const carouselData = [
 ];
 const CarouselCard = (props) => {
   return (
-    <div className="h-full w-48 border-x-1 border-gray-300 hover:bg-gray-100 hover:border-blue-900 duration-200 ease-in-out text-center flex flex-col justify-between p-4 border-x">
+    <div className="h-full w-48 border-x-1 border-gray-300 hover:border-blue-900 duration-200 ease-in-out text-center flex flex-col justify-between p-4 border-x">
       <img
         src={props.icon_url}
         className="w-3/5 object-cover w-20 self-center"
