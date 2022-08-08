@@ -51,9 +51,9 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 ## Built with
 
 - [React.js](https://reactjs.org) - A JavaScript library for building user interfaces
-- [TailwindCSS](https://tailwindcss.com/) - A utility-first CSS framework packed with classes like <code>flex, pt-4, text-center and rotate-90</code> that can be composed to build any design, directly in your markup.
-- [Chakra UI](https://chakra-ui.com/) - a simple, modular and accessible component library that gives you the building blocks you need to build your React applications.
-- [Framer](https://www.framer.com/developers/) - a tool built for interactive design. Backed by React, technical users can extend anything through code.
+- [TailwindCSS](https://tailwindcss.com/) - An utility-first CSS framework packed with classes like <code>flex, pt-4, text-center and rotate-90</code> that can be composed to build any design, directly in your markup.
+- [Chakra UI](https://chakra-ui.com/) - A simple, modular and accessible component library that gives you the building blocks you need to build your React applications.
+- [Framer](https://www.framer.com/developers/) - A production-ready motion library for React. Utilize the power behind Framer, the best prototyping tool for teams. Proudly open source.
 
 ## Requirement
 to start the apps, you need:
